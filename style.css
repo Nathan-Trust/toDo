@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Satisfy&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: rgb(208, 226, 232);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+}
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(142, 137, 137);
+    border-radius: 40px;
+    }
+    ::-webkit-scrollbar-track {
+    background-color: transparent;
+    }
+
+
+
+
+
+/* Style the container */
+.container {
+  /* max-width: 400px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  width: 400px;
+}
+
+.container .title {
+    background: linear-gradient(to right , blue , lightblue);
+    padding: 30px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    /* font-family: 'Great Vibes', cursive; */
+/* font-family: 'Pacifico', cursive; */
+font-family: 'Satisfy', cursive;
+}
+
+
+.input{
+    padding: 10px;
+}
+/* Style the input field */
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the task list */
+#taskList {
+  list-style: none;
+  padding: 30px;
+  height:310px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+
+/* Style individual task items */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  /* width: 300px; */
+  transition: all 0.5s ease-out;
+}
+
+li:hover {
+  scale: 1.2;
+}
+
+/* Style the buttons */
+button {
+  /* background-color: #f44336;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px; */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trash:hover {
+    border: none;
+    color: red;
+}
+
+.edit:hover {
+    border: none;
+    color: green;
+}
+
+.update:hover {
+    border: none;
+    color: blue;
+}
+
+
+/* Style the input field in edit mode */
+input[type="text"] {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* Style the update button */
+.update-button {
+  background-color: #4caf50;
+}
+
+.update-button:hover {
+  background-color: #45a049;
+}
+
+.task-slide-right {
+  transform: translateX(50px);
+  transition: transform 0.3s ease-out;
+}
+
+.task-slide-left {
+    position: fixed;
+    left: 0;
+  transform: translateX(-1000px);
+  transition: transform 0.3s ease-out;
+}
+
+.task-fade-out {
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.task-fade-out.fade {
+  opacity: 0;
+}

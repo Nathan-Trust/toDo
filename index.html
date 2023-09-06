@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/e2730bd9f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Creating a to do list -->
+    <div class="container">
+        <div class="title">
+            <p id="dateDisplay">Todo List</p>
+        </div>
+        <div class="input">
+            <input id="taskInput" type="text" placeholder="Add a task..." onkeypress="addTask(event)">
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
